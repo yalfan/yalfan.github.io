@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="static/styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-xl navbar-light justify-content-end">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">Home</a>
+                <a class="nav-item nav-link" href="./about">About Me</a>
+                <!--<a class="nav-item nav-link" href="./interests">Interests</a>-->
+                <a class="nav-item nav-link" href="./projects">Projects</a>
+            </div>
+        </nav>
+
+        <div class="container border">
+            <div class="slide-container">
+                <div class="slide fade">
+                    <h3>1 / 3</h3>
+                    <img src="./static/xiaohua.jpg" class="img mx-auto d-block" style="scale: 100%; border-radius: 20%; object-fit: cover;" width="200" height="200">
+                </div>
+
+                <div class="slide fade">
+                    <h3>2 / 3</h3>
+                    <img src="./static/xiaohua.jpg" class="img mx-auto d-block" style="scale: 100%; border-radius: 20%; object-fit: cover;" width="200" height="200">
+                </div>
+                
+                <div class="slide fade">
+                    <h3>3 / 3</h3>
+                    <img src="./static/xiaohua.jpg" class="img mx-auto d-block" style="scale: 100%; border-radius: 20%; object-fit: cover;" width="200" height="200">
+                </div>
+
+                <a class="prev" onclick="prevSlide()">❮</a>
+                <a class="next" onclick="nextSlide()">❯</a>
+
+                <script>
+                    let slideIndex = 1;
+                    showSlide(slideIndex);
+
+                    function nextSlide() {
+                        showSlide(slideIndex += 1);
+                    }
+
+                    function prevSlide() {
+                        showSlide(slideIndex -= 1);
+                    }
+
+                    function showSlide(n) {
+                        let slides = document.getElementsByClassName("slide");
+                        if (n > slides.length) {
+                            slideIndex = 1;
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length;
+                        }
+                        let i;
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slides[slideIndex-1].style.display = "block";
+                    }
+                </script>
+
+            </div>
+            <div class="display-1 text-center">Hi! I'm Yale...</div>
+            <p class="text-center">...an aspiring software developer interested in all things computer science. </p>
+        </div>
+    </body>
+</html>
