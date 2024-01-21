@@ -31,7 +31,7 @@ ul {
 .container {
     padding: 5px;
     margin: 30px auto auto;
-    max-width: 50%;
+    max-width: 85%;
 }
 
 .row {
@@ -70,11 +70,12 @@ i {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
+    font-size: 90%;
 }
 
 .project-img {
     width: 100%;
-    max-height: 300px;
+    max-height: 250px;
     transition: all 500ms ease;
     z-index: 1;
     opacity: 1;
@@ -237,3 +238,19 @@ i {
 }
 
 
+/* Customize container */
+@media (min-width: 576px) {
+    .container {
+        max-width: 85% !important;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 70% !important;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 50% !important;
+    }
+}
