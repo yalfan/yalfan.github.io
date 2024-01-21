@@ -2,343 +2,178 @@
 <html lang="en">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="static/styles.css" rel="stylesheet">
-    <title>Yale Fang</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="static/styles2.css" rel="stylesheet">
+    <title>Yale Fang • yalfan</title>
 </head>
 <body>
-    <section id="about-me">
-        <nav class="topnav">
-            <div class="personal__logo">Pranay Roni</div>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-                    <a href="#languages" class="nav__link--anchor link__hover-effect link__hover-effect--black">Languages</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
-                </li>
-                <li class="nav__link">
-                    <a href="mailto:pranay.roni@icloud.com" class="nav__link--anchor nav__link--anchor-primary">Contact</a>
-                </li>
-                <li class="nav__link">
-                    <a id="themea" class="link__hover-effect link__hover-effect--black">
-                        <img src="./assets/darkmode.png" id="themebutton">
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-        <div class="flex-1">
-            <div class="about-me__info row">
-                <div class="about-me__info--container">
-                    <figure class="about-me__picture--mask">
-                        <img
-                                src="./assets/pransuitpfp.png"
-                                class="about-me__picture"
-                                alt="PR logo"
-                                style="scale: 115% 160%; margin-left:5px; margin-top:-9px"
-                        />
-                    </figure>
-                    <h1 class="about-me__info--title">
-                        Hey! I'm <span class="text-purple">Pranay</span>...
-                    </h1>
-                    <p class="about-me__info--para">
-                        I'm a
-                        <strong class="text-purple">Software Engineer</strong>
-                        with a strong passion for solving problems in creative ways. Using effective
-                        collaboration and analytical thinking, I build responsive and performant
-                        web applications with great UI, and create efficient backend solutions.
-                    </p>
-                    <div class="about-me__links">
-                        <a href="https://www.linkedin.com/in/pranay-roni-a2b331221/"
-                            target="_blank"
-                            class="about-me__link">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.github.com/pranayroni/"
-                            target="_blank"
-                            class="about-me__link">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a id="maillink" href="mailto:pranay.roni@icloud.com" class="about-me__link tooltip">
-                            <i class="far fa-envelope"></i>
-                            <span class="tooltiptext">pranay.roni@icloud.com</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="languages">
-        <div class="container">
-            <div class="row">
-                <h1 class="section__title">
-                    My <a class="link__hover-effect link__hover-effect--purple text-purple defaultcursor">tech stack.</a>
-                </h1>
-                <div class="language__list">
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                                    alt=""
-                                    class="language__img"
-                            />
-                        </figure>
-                        <span class="language__name">HTML</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img
-                                    src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-                                    alt=""
-                                    class="language__img"
-                            />
-                        </figure>
-                        <span class="language__name">CSS</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img
-                                    src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-                                    alt=""
-                                    class="language__img"
-                            />
-                        </figure>
-                        <span class="language__name">JavaScript</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="./assets/java.svg" alt="" class="language__img"/>
-                        </figure>
-                        <span class="language__name">Java</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="./assets/python.svg" alt="" class="language__img"/>
-                        </figure>
-                        <span class="language__name">Python</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="./assets/c.svg" alt="" class="language__img"/>
-                        </figure>
-                        <span class="language__name">C</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="./assets/angularlogo.png" alt="" class="language__img"/>
-                        </figure>
-                        <span class="language__name">Angular</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="./assets/sql.png" alt="" class="language__img"/>
-                        </figure>
-                        <span class="language__name">SQL</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects">
-        <div class="container">
-            <div class="row">
-                <h1 class="section__title">
-                    Here are some of my <span class="text-purple"><a
-                        class="link__hover-effect link__hover-effect--purple text-purple defaultcursor">projects</a></span>
-                </h1>
-                <ul class="project__list">
-                    <li class="project">
-                        <img
-                                src="./assets/sparkleT.gif"
-                                alt="pranrealestate"
-                                style="margin-top: -2.5rem;
-                    margin-left: -3.5rem;
-                    position:absolute;
-                    z-index: 3;
-                    width: 8rem
-                    "
-
-                        />
-                        <div class="project__wrapper">
-                            <img
-                                    src="./assets/RealestateThumbnail.png"
-                                    class="project__img"
-                                    alt="pranrealestate"
-                            />
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    PranRealEstate
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    <br>
-
-                                    <span style="color: #dddddd; font-size:smaller"><i>Technologies: React, Node.js, Express, Redux, MongoDB, MaterialUI</i></span>
-                                </h4>
-                                <p class="project__description--para">
-
-                                    Fullstack web app that allows users to view data
-                                    in a beautiful dashboard.
-
-                                    <br/><br>
-                                    <b class="text-purple">Note:</b>
-                                    <br/><br>
-                                    This app is being hosted for free on <span class="text-purple">render.com</span>'s
-                                    containers.
-                                    It <span class="text-purple">may take up to several minutes</span> to load site and make
-                                    server requests
-                                    before the container is reinitalized.
-                                </p>
-                                <div class="project__description--links">
-                                    <a
-                                            href="https://pranrealestate-client.onrender.com/dashboard"
-                                            target="_blank"
-                                            class="project__description--link"
-                                    >
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                    <a
-                                            href="https://github.com/pranayroni/pranrealestate"
-                                            target="_blank"
-                                            class="project__description--link"
-                                    >
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+    <section id="introduction">
+        <nav class="navbar navbar-expand-md navbar-light flex-sm-nowrap">
+            <button class="navbar-toggler flex-grow-sm-1 flex-grow-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="navbar-brand">Yale Fang</span>
+            <div class="navbar-collapse collapse me-auto" id="navbar-content">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About</a>
                     </li>
-                    <li class="project">
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img
-                                    src="./assets/gregdayoff.png"
-                                    class="project__img"
-                                    alt="Car subscription project"
-                            />
-                            <div class="project__description">
-                                <h3 class="project__description--title">Greg's Day Off</h3>
-                                <h4 class="project__description--sub-title">
-                                    C#, Unity, After Effects, Photoshop, Spine and more
-                                </h4>
-                                <p class="project__description--para">
-                                    Won 1st Place for Computer Simulation and Programming at the
-                                    State Leadership Conference for FBLA. <br/>Top-Down
-                                    Multiplayer Fighter Game.
-                                </p>
-                                <div class="project__description--links">
-                                    <!-- <a href="https://github.com/pranayroni/invoicecreator" target="_blank" class="project__description--link">
-                                      <i class="fab fa-github"></i>
-                                    </a> -->
-                                    <a
-                                            href="https://www.mediafire.com/file/zm6wwo5ga07v3ii/v1.3.zip/file"
-                                            target="_blank"
-                                            class="project__description--link"
-                                    >
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img
-                                    src="./assets/pran.png"
-                                    class="project__img"
-                                    alt="particle project"
-                            />
-                            <div class="project__description">
-                                <h3 class="project__description--title">Particle Physics</h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, Javascript
-                                </h4>
-                                <p class="project__description--para">
-                                    Uses mouse movement and physics to push particles relative
-                                    to mouse position.
-                                </p>
-                                <div class="project__description--links">
-                                    <a
-                                            href="https://pranayroni.github.io/pranparticle/"
-                                            target="_blank"
-                                            class="project__description--link"
-                                    >
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                    <a
-                                            href="https://github.com/pranayroni/pranparticle"
-                                            target="_blank"
-                                            class="project__description--link"
-                                    >
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img
-                                    src="./assets/prantype.jpeg"
-                                    class="project__img"
-                                    alt="prantype"
-                            />
-                            <div class="project__description">
-                                <h3 class="project__description--title">PranType</h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, Javascript
-                                </h4>
-                                <p class="project__description--para">
-                                    Test your ability to type with this typing game.
-                                </p>
-                                <div class="project__description--links">
-                                    <a
-                                            href="https://prantype.netlify.app"
-                                            target="_blank"
-                                            class="project__description--link"
-                                    >
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                    <a
-                                            href="https://github.com/pranayroni/typingtest"
-                                            target="_blank"
-                                            class="project__description--link"
-                                    >
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-primary" href="mailto:yfang578@gmail.com">Contact</a>
                     </li>
                 </ul>
             </div>
+
+        </nav>
+
+
+        <div class="container">
+            <h1 class="display-5 text-center">Hi! I'm Yale Fang...</h1>
+            <p class="text-center">an aspiring software developer interested in all things computer science.
+                Whether it’s designing user-friendly interfaces, optimizing code for performance,
+                or collaborating with diverse teams to solve complex challenges,
+                I'm always looking to learn from and contribute to the field.</p>
+            <div class="intro-links">
+                <a class="intro-link" target="_blank" href="https://github.com/yalfan/"><i class="bi bi-github h2"></i></a>
+                <a class="intro-link" target="_blank" href="https://www.linkedin.com/in/yalfan/"><i class="bi bi-linkedin h2"></i></a>
+                <a class="intro-link" target="_blank" href="mailto:yfang578@gmail.com"><i class="bi bi-envelope h2"></i></a>
+                <a class="intro-link" target="_blank" href="./static/assets/Resume.pdf"><i class="bi bi-file-earmark-person-fill h2"></i></a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="about-me">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <div class="row">
+                <div class="col-sm">
+                    <h3>Education</h3>
+                    <p>I'm currently a junior at Rutgers University - New Brunswick majoring in
+                        Computer Science and minoring in Mathematics.</p>
+                    <p hidden>Some of the courses I've enjoyed the most are:
+                        <span class="text-green">Data Structures</span>,
+                        <span class="text-green">Design and Analysis of Computer Algorithms</span>,
+                        <span class="text-green">Principles of Information & Data Management</span>, and
+                        <span class="text-green">Operating Systems Design</span>.</p>
+                    <p>
+                        In my free time, I enjoy playing tennis, watching soccer, and skiing during the winter.
+                        Recently, I've been having a blast working my way through some comedy shows like <i>Curb Your Enthusiasm</i>,
+                        <i>Arrested Development</i>, and <i>It's Always Sunny in Philadelphia</i>.
+                    </p>
+                </div>
+
+                <div class="col-sm ml-auto">
+                    <h3 class="text-center">My <span class="underlined-text underlined-text_green text-green">Tech Stack</span></h3>
+                    <div class="language-list">
+                        <div class="language">
+                            <figure class="language-img-wrapper">
+                                <img src="static/images/python.png" alt="Python" class="language-img" />
+                                <figcaption class="language-name">Python</figcaption>
+                            </figure>
+                        </div>
+                        <div class="language">
+                            <figure class="language-img-wrapper">
+                                <img src="static/images/java.png" alt="Java" class="language-img" />
+                                <figcaption class="language-name">Java</figcaption>
+                            </figure>
+                        </div>
+                        <div class="language">
+                            <figure class="language-img-wrapper">
+                                <img src="static/images/c.png" alt="C/C++" class="language-img" />
+                                <figcaption class="language-name">C/C++</figcaption>
+                            </figure>
+                        </div>
+                        <div class="language">
+                            <figure class="language-img-wrapper">
+                                <img src="static/images/javascript.png" alt="Javascript" class="language-img" />
+                                <figcaption class="language-name">JavaScript</figcaption>
+                            </figure>
+                        </div>
+                        <div class="language">
+                            <figure class="language-img-wrapper">
+                                <img src="static/images/mysql.png" alt="MySQL" class="language-img" />
+                                <figcaption class="language-name">MySQL</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="text-center">Some of <span class="underlined-text underlined-text_green text-green">My Projects</span></h2>
+
+            <ul>
+                <li class="project">
+                    <img src="./static/images/pairs-trading.png" class="project-img mx-auto d-block" alt="Pairs Trading Project">
+                    <div class="project-description">
+                        <h3 class="text-white">
+                            <a href="https://pairs-trading-project.onrender.com/"><span>Pairs Trading Project</span><i class="bi bi-box-arrow-up-right h5"></i>
+                            </a>
+                        </h3>
+                        <h5 class="text-white">Web application for the pairs trading strategy</h5>
+                        <p class="text-white">A site designed to be your one-stop shop for cryptocurrency pairs trading needs! Backtest, analyze, and graph each type of cyptocurrency here!</p>
+                        <a href="https://github.com/yalfan/pairs-trading-project">
+                            <span>GitHub</span><i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="project">
+                    <img src="./static/images/yearview.png" class="project-img mx-auto d-block" alt="YearView">
+                    <div class="project-description">
+                        <h3 class="text-white">
+                            <a href="https://yalfan.pythonanywhere.com/"><span>YearView</span><i class="bi bi-box-arrow-up-right h5"></i>
+                            </a>
+                        </h3>
+                        <h5 class="text-white">A Personalized Overview of Your Year</h5>
+                        <p class="text-white">By inputting your daily activities, the website collects the information and compiles it to create a satisfying day-by-day infographic of your whole year.</p>
+                        <a href="https://github.com/yalfan/yearview">
+                            <span>GitHub</span><i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="project">
+                    <img src="./static/images/ruempty.png" class="project-img mx-auto d-block" alt="RUEmpty">
+                    <div class="project-description">
+                        <h3 class="text-white">
+                            <a href="https://ruempty.pythonanywhere.com/"><span>RUEmpty</span><i class="bi bi-box-arrow-up-right h5"></i>
+                            </a>
+                        </h3>
+                        <h5 class="text-white">A Website for Finding Empty Rutgers NB Classrooms</h5>
+                        <p class="text-white">Empty classrooms are often a great, quiet place to study. Simply input a campus and building to see what classrooms are open!</p>
+                        <a href="https://github.com/yalfan/ruempty">
+                            <span>GitHub</span><i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+
     <footer>
-        <div class="row footer__row">
-            <a href="#" class="footer__anchor">
-                <span class="footer__logo--popper">
-                Top
-                <i class="fas fa-arrow-up"></i>
-              </span>
+        <div class="row">
+            <a href="#" class="text-center">
+                <span>Top</span>
             </a>
-            <div class="footer__social--list">
-                <a href="https://github.com/yalfan/"
-                   target="blank"
-                   class="footer__social--link link__hover-effect link__hover-effect--swhite"
-                   target="_blank">Github</a>
-                <a href="https://www.linkedin.com/in/yalfan/"
-                   target="_blank"
-                   class="footer__social--link link__hover-effect link__hover-effect--swhite"
-                   target="_blank">LinkedIn</a>
-                <a href="mailto:yfang578@gmail.com"
-                   class="footer__social--link link__hover-effect link__hover-effect--swhite"
-                   target="_blank">Email</a>
-                <a href="./static/assets/Resume.pdf"
-                   class="footer__social--link link__hover-effect link__hover-effect--swhite"
-                   target="_blank">Resume</a>
+            <div class="intro-links">
+                <a href="https://github.com/yalfan/">Github</a>
+                <a href="https://www.linkedin.com/in/yalfan/">LinkedIn</a>
+                <a href="mailto:yfang578@gmail.com">Email</a>
+                <a href="./static/assets/Resume.pdf">Resume</a>
             </div>
-            <div class="footer__copyright">Copyright © 2024 Yale Fang</div>
+            <div class="text-center">© 2024 Yale Fang</div>
         </div>
     </footer>
 </body>

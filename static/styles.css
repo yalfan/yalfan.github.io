@@ -12,8 +12,6 @@
     --purple: #fd5adf;
     --bg: white;
     --bgtext: black;
-    --green: #A3C9A8;
-
 }
 
 .dark-mode{
@@ -310,11 +308,6 @@ nav {
 
 .text-purple {
     color:var(--purple);
-    cursor: text !important;
-}
-
-.text-green {
-    color:var(--green);
     cursor: text !important;
 }
 
