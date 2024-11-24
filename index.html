@@ -3,8 +3,15 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico">
     <link href="static/styles.css" rel="stylesheet">
     <meta name="description" content="This is my CS portfolio. Find my projects, experience, and contact information here!">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
+    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+    <script src="./static/scripts.js"></script>
+
     <title>Yale Fang • yalfan</title>
 </head>
 <body>
@@ -148,7 +155,7 @@
             <li class="project">
                 <img src="./static/images/ruempty.png" class="project-img mx-auto d-block" alt="RUEmpty">
                 <div class="project-description">
-                    <h3 class="text-white">
+                    <h3>
                         <a href="https://ruempty.pythonanywhere.com/"><span>RUEmpty</span><i class="bi bi-box-arrow-up-right h5"></i>
                         </a>
                     </h3>
@@ -157,6 +164,18 @@
                     <a href="https://github.com/yalfan/ruempty">
                         <span>GitHub</span><i class="bi bi-box-arrow-up-right"></i>
                     </a>
+                </div>
+            </li>
+        </ul>
+
+        <h2 class="text-center">Some simple <span class="underlined-text underlined-text_green text-green">utilities</span></h2>
+        <ul>
+            <li>
+                <h3><span class="text-green utility-button">OCR</span></h3>
+                <div id="ocr-utility" class="project utility-popout">
+                    <h5 class="text-green text-center">Paste your image here</h5>
+                    <div id="image-container"></div>
+                    <p id="output-text"></p>
                 </div>
             </li>
         </ul>
