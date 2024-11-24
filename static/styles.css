@@ -287,16 +287,22 @@ i {
     overflow: hidden;  /* Hide content that overflows when collapsed */
 }
 
+#ocr-utility * {
+    padding: 10px;
+}
+
 #image-container {
     max-width: 80%;  /* Ensure the image does not overflow the container */
-    padding: 10px;
     height: auto;     /* Maintain image aspect ratio */
+    margin: 0 auto;
+}
+
+#image-container img {
     margin: 0 auto;
 }
 
 #output-text {
     max-width: 80%;
     margin: 0 auto;
-    padding: 10px;
     text-align: left;
 }
