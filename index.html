@@ -10,7 +10,7 @@
 
 
     <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
-    <script src="./static/scripts.js"></script>
+    <script type="module" src="./static/scripts.js"></script>
 
     <title>Yale Fang • yalfan</title>
 </head>
@@ -178,6 +178,23 @@
                     <p id="output-text"></p>
                 </div>
             </li>
+
+            <li>
+                <h3><span class="text-green utility-button">Subtitle Timer</span></h3>
+                <div id="subtitle-utility" class="project utility-popout">
+                    <input type="file" id="fileInput" accept=".srt"><br><br>
+
+                    <label>Minutes Offset: <input type="number" id="offsetMinutes" value="0" min="-300" max="300"
+                                                  placeholder="mins" required></label><br>
+                    <label>Seconds Offset: <input type="number" id="offsetSeconds" value="20" min="-60" max="60"
+                                                  placeholder="secs" required></label><br>
+                    <label>Milliseconds Offset: <input type="number" id="offsetMillis" value="0" min="-1000" max="1000"
+                                                       placeholder="ms" required></label><br><br>
+
+                    <button id="subtitle-button">Shift and Download</button>
+
+                </div>
+            </li>
         </ul>
 
     </div>
@@ -194,7 +211,7 @@
             <a href="https://github.com/yalfan/">Github</a>
             <a href="https://www.linkedin.com/in/yalfan/">LinkedIn</a>
             <a href="mailto:yfang578@gmail.com">Email</a>
-            <a href="./static/assets/Resume.pdf">Resume</a>
+            <a href="./static/assets/Resume2025.pdf">Resume</a>
         </div>
         <div class="text-center">© 2024 Yale Fang</div>
     </div>
